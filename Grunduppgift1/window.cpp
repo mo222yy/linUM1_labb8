@@ -27,21 +27,27 @@ Window::Window(QWidget *parent) :
  happy_button->setGeometry(100, 50, 80, 30);
  happy_button->setCheckable(true);
  happy_button->setFixedSize(150, 50);
+ happy_button->setToolTip("Are you happy?");
 
  sad_button = new QPushButton("Sad", this);
  sad_button->setGeometry(275, 50, 80, 30);
  sad_button->setCheckable(true);
  sad_button->setFixedSize(150, 50);
+ sad_button->setToolTip("Are you sad?");
 
  tired_button = new QPushButton("Tired", this);
  tired_button->setGeometry(450, 50, 80, 30);
  tired_button->setCheckable(true);
  tired_button->setFixedSize(150, 50);
+ tired_button->setToolTip("Are you tired?");
+
 
  loving_button = new QPushButton("Loving", this);
  loving_button->setGeometry(625, 50, 80, 30);
  loving_button->setCheckable(true);
  loving_button->setFixedSize(150, 50);
+ loving_button->setToolTip("do you feel loving?");
+
 
  smiley_button = new QPushButton(this);
  smiley_button->setGeometry(350, 120, 80, 30);
