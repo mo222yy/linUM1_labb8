@@ -4,6 +4,8 @@
 #include <QMainWindow>
 
 class QPushButton;
+class QLineEdit;
+class QMessageBox;
 
 namespace Ui {
 class MainWindow;
@@ -22,9 +24,22 @@ private slots:
 
     void on_decreaseButton_clicked();
 
+    void on_lineEdit_editingFinished();
+
+    void on_spinBox_3_valueChanged(int arg1);
+
+    void checkValue(int arg1);
+
+    void on_spinBox_2_valueChanged(int arg1);
+
+    void on_spinBox_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
-     QPushButton *exitButton;
+    QPushButton *exitButton;
+    int *step;
+    int getValue();
+    QMessageBox *dialog;
 };
 
 #endif // MAINWINDOW_H
